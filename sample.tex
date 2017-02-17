@@ -1,0 +1,50 @@
+\documentclass{book}
+
+% hyperlinks
+\usepackage{hyperref}
+\hypersetup{colorlinks, citecolor={black},	
+linkcolor={blue}, urlcolor={blue}}
+
+% define the title
+\title{Book Title}
+\author{Chris}
+\date{}
+
+\setcounter{tocdepth}{0}
+
+% set image attributes:
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+
+\begin{document}
+\maketitle
+
+\tableofcontents
+
+\chapter{Introduction}
+The quick brown fox watches \href{www.cnn.com}{CNN}. 
+
+\vspace{3mm}
+\noindent Here is some \textbf{bold text}. Here is some \textit{italicized text}.
+
+This is \textsf{sans serief text}. This is \texttt{typewriter text}.
+
+This is ``quoted text''. This "will not work".\footnote{This is a footnote.}
+
+\section*{Background}
+This is some background information.
+
+\newpage
+
+\includegraphics[scale=.75]{testImage.png}
+\label{fig:fig1}
+
+\newpage
+\subsection*{St. Louis}
+
+$ x = \frac{\eta}{2} $
+
+\chapter{Literature Review}
+The quicker brown fox jumped over the lazy dog.
+\end{document}
+
